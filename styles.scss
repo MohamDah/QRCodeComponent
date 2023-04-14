@@ -9,40 +9,54 @@ $darkblue: hsl(218, 44%, 22%);
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     width: 100vw;
-    height: 100vh;
     overflow: hidden;
     font-family: 'Outfit', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: $lightgray;
 
-    #main {
-        width: 300px;
-        height: 450px;
+    main.main {
+        width: 320px;
+        height: 500px;
         background-color: $white;
         border-radius: 15px;
         padding: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         #qr {
-            width: 270px;
+            width: 100%;
             border-radius: 15px;
         }
-        p {
-            margin-left: 20px;
-            margin-right: 20px;
+        h1, p {
+            margin: 0.8s.em 7%;
             text-align: center;
         }
-        #boldone {
-            font-size: 1.2rem;
+        h1 {
+            font-size: 1.35rem;
             font-weight: 700;
+            color: $darkblue;
         }
-        #lightone {
+        p {
             font-size: 15px;
             font-weight: 400;
+            color: $grayishblue;
+        }
+    }
+    .attribution { 
+        font-size: 11px; text-align: center;
+        position: absolute;
+        bottom: 0;
+
+        a { 
+            color: hsl(228, 45%, 44%); 
         }
     }
 }

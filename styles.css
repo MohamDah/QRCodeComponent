@@ -3,40 +3,54 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   width: 100vw;
-  height: 100vh;
   overflow: hidden;
   font-family: "Outfit", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: hsl(212, 45%, 89%);
 }
-body #main {
-  width: 300px;
-  height: 450px;
+body main.main {
+  width: 320px;
+  height: 500px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
   padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-body #main #qr {
-  width: 270px;
+body main.main #qr {
+  width: 100%;
   border-radius: 15px;
 }
-body #main p {
-  margin-left: 20px;
-  margin-right: 20px;
+body main.main h1, body main.main p {
+  margin: 0.8em 7%;
   text-align: center;
 }
-body #main #boldone {
-  font-size: 1.2rem;
+body main.main h1 {
+  font-size: 1.35rem;
   font-weight: 700;
+  color: hsl(218, 44%, 22%);
 }
-body #main #lightone {
+body main.main p {
   font-size: 15px;
   font-weight: 400;
+  color: hsl(220, 15%, 55%);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /*# sourceMappingURL=styles.css.map */
